@@ -1,6 +1,7 @@
 import React from "react";
 import EnjoyListening from "../components/EnjoyListening";
 import FeatureOverview from "../components/FeatureOverview";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import PopularBook from "../components/PopularBook";
@@ -15,6 +16,7 @@ export default function Home() {
       <EnjoyListening />
       <FeatureOverview />
       <ReasonsToUse />
+      <Footer />
     </div>
   );
 }
