@@ -1,12 +1,13 @@
 import React from "react";
 import { BeakerIcon, BookOpenIcon } from "@heroicons/react/solid";
+import ButtonSquare from "./ButtonSquare";
 
 export default function Navbar() {
   return (
     // <div className="border-2 border-red-500 container mx-auto px-16 py-">
     //   <h1>Navbar</h1>
     // </div>
-    <div className="navbar bg-base-100 container mx-auto px-10 py-4">
+    <div className="navbar container mx-auto px-10 py-4 bg-orange-100">
       <div className="navbar-start">
         <div className="bg-primary rounded-full">
           <BookOpenIcon className="w-10 p-2 text-white" />
@@ -31,9 +32,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-success px-8 shadow-square normal-case text-base">
-          Sign In
-        </a>
+        <ButtonSquare text="Sign In" />
       </div>
     </div>
   );

@@ -1,0 +1,33 @@
+import { DocumentDownloadIcon } from "@heroicons/react/solid";
+import React from "react";
+
+export default function Hero() {
+  return (
+    <div className="container mx-auto px-10 py-4 bg-orange-100 h-[90vh] flex">
+      {/* Left */}
+      <div className="border-2 border-red-500 flex-1 text-center p-10">
+        <h2 className="text-7xl font-medium leading-[7rem]">
+          Find a listen for <span className="text-primary">every moment.</span>
+        </h2>
+        <h4 className="text-3xl text-gray-600 my-16">
+          Stories for every day, audio entertainment is here and library full of
+          binge-worthy audiobooks
+        </h4>
+        <div>
+          <button className="btn btn-primary btn-lg text-white shadow-square px-10 normal-case text-xl tracking-wider mr-8">
+            Get Started
+          </button>
+          <button className="btn-outline text-black btn-lg px-10 text-xl rounded-lg">
+            <span>
+              <DocumentDownloadIcon className="w-9 mr-2 inline-block" />
+            </span>
+            Download for IOS
+          </button>
+        </div>
+      </div>
+
+      {/* Right */}
+      <div className="border-2 border-blue-500 flex-1"></div>
+    </div>
+  );
+}
