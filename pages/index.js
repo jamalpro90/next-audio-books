@@ -4,6 +4,7 @@ import FeatureOverview from "../components/FeatureOverview";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import PopularBook from "../components/PopularBook";
+import ReasonsToUse from "../components/ReasonsToUse";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <PopularBook />
       <EnjoyListening />
       <FeatureOverview />
+      <ReasonsToUse />
     </div>
   );
 }

@@ -22,3 +22,7 @@ a {
 .shadow-square {
   box-shadow: 0 0 0px 2px #222, 0 2px 0 2px #222;
 }
+
+.shadow-right {
+  box-shadow: 3px 0px 4px 0 rgba(0, 0, 0, 0.281);
+}
