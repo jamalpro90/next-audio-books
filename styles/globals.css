@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.shadow-square {
+  box-shadow: 0 0 0px 2px #222, 0 2px 0 2px #222;
 }
