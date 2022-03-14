@@ -1,11 +1,12 @@
 import { DocumentDownloadIcon } from "@heroicons/react/solid";
+import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto px-10 py-4 bg-orange-100 h-[90vh] flex">
+    <div className="container mx-auto px-10 py-4 bg-orange-100 h-[100vh] flex">
       {/* Left */}
-      <div className="border-2 border-red-500 flex-1 text-center p-10">
+      <div className="flex-1 text-center p-10 pt-32">
         <h2 className="text-7xl font-medium leading-[7rem]">
           Find a listen for <span className="text-primary">every moment.</span>
         </h2>
@@ -27,7 +28,17 @@ export default function Hero() {
       </div>
 
       {/* Right */}
-      <div className="border-2 border-blue-500 flex-1"></div>
+      <div className="flex-1">
+        <div className="w-5/6 mx-auto pt-32">
+          <Image
+            src="/image/hero.png"
+            alt="Hero Image"
+            width={600}
+            height={600}
+            layout="responsive"
+          />
+        </div>
+      </div>
     </div>
   );
 }

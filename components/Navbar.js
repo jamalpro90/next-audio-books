@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { BeakerIcon, BookOpenIcon } from "@heroicons/react/solid";
 import ButtonSquare from "./ButtonSquare";
 
 export default function Navbar() {
+  // const [scrollY, setScrollY] = useState();
+  const navbar = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      // console.log(window.scrollY);
+      if (window.scrollY > 670) {
+        navbar.current.classList.add("shadow-md");
+      } else {
+        navbar.current.classList.remove("shadow-md");
+      }
+    });
+  }, []);
+
   return (
-    // <div className="border-2 border-red-500 container mx-auto px-16 py-">
-    //   <h1>Navbar</h1>
-    // </div>
-    <div className="navbar container mx-auto px-10 py-4 bg-orange-100">
+    <div
+      ref={navbar}
+      className="navbar container mx-auto px-10 py-4 bg-orange-100 fixed z-50 transition duration-200"
+    >
       <div className="navbar-start">
         <div className="bg-primary rounded-full">
           <BookOpenIcon className="w-10 p-2 text-white" />

@@ -20,3 +20,6 @@ export default function Home() {
     </div>
   );
 }
+
+// Latihan desain dari dribble punya Hakim Haiman
+// https://dribbble.com/shots/17703699-Auca-Audio-Book-Landing-Page/attachments/12863935?mode=media
